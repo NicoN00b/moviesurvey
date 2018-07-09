@@ -6,23 +6,23 @@ var add = function(stringNumber1, stringNumber2, StringNumber3) {
   var numericResult = number1 + number2 + number3;
     console.log(numericResult);
 
-    if (numericResult === 3 || 4) {
-      result = ("Blood Hound")
-    } else if (numericResult === 5 || 6) {
-      result = ("Norwich Terrior")
-    } else if (numericResult === 7 || 8) {
-      result = ("Shitsu")
-    } else if (numericResult === 9 || 10) {
-      result = ("French Poodle")
-    } else if (numericResult === 11 || 12) {
-      result = ("Weimaraner")
+    if (numericResult < 5) {
+      result = ("Blood Hound");
+    } else if (numericResult < 7) {
+      result = ("Norwich Terrior");
+    } else if (numericResult < 9) {
+      result = ("Shitsu");
+    } else if (numericResult < 11) {
+      result = ("French Poodle");
+    } else {
+      result = ("Weimaraner");
     }
 
 };
 
 
 $(document).ready(function() {
-  $("form#quiz").submit(function() {
+  $("#survey-form").submit(function() {
     event.preventDefault();
   //  var number1 = parseInt($(".input1").val());
   //  var number2 = parseInt($(".input2").val());
